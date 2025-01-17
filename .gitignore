@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files
+/media/
+/staticfiles/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# VSCode-specific
+.vscode/
+
+# PyCharm-specific
+.idea/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Testing
+.coverage
+*.cover
+coverage.xml
+.hypothesis/
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Virtual environments
+venv/
+env/
+ENV/
+venv.bak/
+
+# Node.js dependencies (if any)
+node_modules/
+
+# Compiled files
+*.mo
+
+# Deployment
+*.pem
+*.crt
+*.key
