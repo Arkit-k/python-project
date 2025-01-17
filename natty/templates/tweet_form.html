@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+tweety
+{% endblock %}
+
+{% block content %}
+<div class="text-center  mt-10">
+    <h1 class="text-4xl font-bold text-white">Welcome to Chai's Django Project</h1>
+
+    <h2>{%if from.instance.pk %}
+      Edit tweet
+      {% else %}
+      Create tweet
+      {% endif %}
+      <form  method="post" enctype="multipart/form-data" class="form">
+            {% csrf_token%}
+            {{ form.as_p }}
+      <button class="btn btn-warning" type="submit">Submit</button>
+      </form>
+      <a href="{% url 'tweet_list' %}">Back to the tweets </a>
+    </h2>
+</div>
+{% endblock %}
